@@ -1,0 +1,239 @@
+body{
+    background-image: url("assets/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#caja-inicio{
+    margin-top: 5%;
+    color: #596179;
+    margin-left: 50px;
+}
+#caja-inicio span{
+    color:#2E98FF;
+}
+.titulo-inicio{
+    font-size: 45px;
+   
+}
+.texto-inicio{
+    font-size: 30px;
+}
+main{
+    margin-top: 60px;
+}
+#container-main{
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(5px);
+    width: 1300px;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    margin-left: 10%;
+}
+
+#container-main h2{
+    color: #2E98FF; 
+}
+#container-main p{
+    font-size: 20px;
+    color: #596179;
+}
+#container-main img{
+    border-radius: 40px;
+    width: 450px;
+    height: 450px;
+    margin-left: 20%;
+
+}
+.btn{
+    border-radius: 40px;
+    padding:4%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    /*Propiedades por tipo de navegador*/
+    -webkit-transition:all .3s ease; /* Safari y Chrome */
+    -moz-transition:all .3s ease; /* Firefox */
+    -o-transition:all .3s ease; /* IE 9 */
+    -ms-transition:all .3s ease; /* Opera */
+    /*La propiedad en si*/
+    transition: all .3s ease; /* 1.3 segundos */
+}
+.btn:hover{
+    /*Propiedades por tipo de navegador*/
+    -webkit-transform:scale(1.1);/* Safari y Chrome */
+    -moz-transform:scale(1.1);/* Firefox */
+    -ms-transform:scale(1.1);/* IE 9 */
+    -o-transform:scale(1.1);/* Opera */
+
+    /*La propiedad en si*/
+    transform:scale(1.1);/* Escalamos por 1.25 */
+}
+#btn-cambiar {
+    background-color: #2E98FF;
+    color: white;
+    margin-right: 15px;
+}
+#btn-cancelar {
+    border-color: rgb(255, 255, 255);
+    color: #2E98FF;
+}
+@media(max-width:1532px){ /*Para pantallas menores o igual a 1532px se aplicara */
+    #container-main{
+        width: 1000px;
+    }
+    #container-main img{
+        border-radius: 40px;
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+    }
+}
+@media(max-width:1383px){ /*Para pantallas menores o igual a 1383px se aplicara */
+    #container-main{
+        width: 850px;
+    }
+}
+@media(max-width:1156px){
+    #container-main{
+        width: 750px;
+    }
+}
+@media(max-width:965px){
+    #container-main{
+        width: 85%;
+    }
+}
+@media(max-width:822px){
+    #btn-cambiar{
+        margin-right: 6px;
+    }
+}
+
+@media(max-width:788px){ /* Tamaño tablet*/
+    .titulo-inicio{
+        font-size: 34px;
+    }
+    .texto-inicio{
+        font-size: 24px;
+    }
+    main{
+        margin-top: 40px;
+    }
+    #container-main h2{
+        color: #2E98FF; 
+        font-size: 24px;
+        margin-top: 14px !important; 
+    }
+    #container-main p{
+        font-size: 20px;
+        color: #596179;
+        margin-top: 12px !important;
+    }
+    #container-main img{
+        border-radius: 40px;
+        width: 100%;
+        height: auto;
+    }
+    #btn-cambiar {
+        background-color: #2E98FF;
+        border-radius: 40px;
+        color: white;
+        font-size: 10px;
+    }
+    #btn-cancelar {
+        border-radius: 40px;
+        border-color: rgb(255, 255, 255);
+        color: #2E98FF;
+        font-size: 10px;
+    }
+}
+@media(max-width:600px){/* PARA MOVILES */
+    .titulo-inicio{
+        font-size: 25px;
+    }
+    .texto-inicio{
+        font-size: 20px;
+    }
+    main{
+        margin-top: 30px;
+    }
+    #container-main h2{
+        color: #2E98FF; 
+        font-size: 15px;
+    }
+    #container-main p{
+        font-size: 10px;
+        color: #596179;
+        margin-top: 10px !important;
+    }
+    #container-main img{
+        border-radius: 40px;
+        width: 100%;
+        height: auto;
+    }
+    #caja-botones{
+        transform: translatey(-50%);
+    }
+    #btn-cambiar {
+        background-color: #2E98FF;
+        border-radius: 40px;
+        color: white;
+        font-size: 6px;
+        
+    }
+    #btn-cancelar {
+        border-radius: 40px;
+        border-color: rgb(255, 255, 255);
+        color: #2E98FF;
+        font-size: 6px;
+    }
+}
+@media(max-width:385px){ /* Moviles muy pequeños*/
+    .titulo-inicio{
+        font-size: 20px;
+    }
+    .texto-inicio{
+        font-size: 15px;
+    }
+    main{
+        margin-top: 20px;
+    }
+    #container-main h2{
+        color: #2E98FF; 
+        font-size: 12px;
+    }
+    #container-main p{
+        font-size: 6px;
+        color: #596179;
+        margin-top: 6px !important;
+    }
+    #container-main img{
+        border-radius: 40px;
+        width: 100%;
+        height: auto;
+    }
+    #caja-botones{
+        transform: translatey(-50%);
+    }
+    .btn{
+        padding:2%;
+        padding-bottom: 1%;
+        padding-top: 1%;
+    }
+    #btn-cambiar {
+        background-color: #2E98FF;
+        border-radius: 40px;
+        color: white;
+        font-size: 6px;
+        margin-right: 0px;
+
+    }
+    #btn-cancelar {
+        border-radius: 40px;
+        border-color: rgb(255, 255, 255);
+        color: #2E98FF;
+        font-size: 6px;
+    }
+}
